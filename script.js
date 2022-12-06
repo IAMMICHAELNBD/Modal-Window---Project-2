@@ -8,4 +8,10 @@ console.log(btnsShowModal);
 
 // Selects Multiple Elements with one class.
 for (let i = 0; i < btnsShowModal.length; i++)
-  console.log(btnsShowModal[i].textContent);
+  btnsShowModal[i].addEventListener('click', function () {
+    console.log('Button Clicked');
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+
+    modal.getElementsByClassName.display = 'block';
+  });
