@@ -18,7 +18,8 @@ const closeModal = function () {
 };
 
 // Selects Multiple Elements with one class.
-for (let i = 0; i < btnsShowModal.length; i++)
+for (let i = 0; i < btnsShowModal.length; i++) {
   btnsShowModal[i].addEventListener('click', openModal);
+}
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
